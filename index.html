@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aae244c887.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpeg" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#Achievements">Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi,I'm <span>T.S.Kubera Vishnu</span><br>From Hindupur</h1>
+        </div>
+
+    </div>
+</div> 
+<!-- ----------about---------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm T.S.KUBERA VISHNU. I'm from Hindupur,Andhra Pradesh.
+                   I am currently pursuring Btech ECE in SRM Institute of Science and Technology.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML</span><br>For the Basic Structure</li>
+                        <li><span>CSS</span><br>For the Styling</li>
+                        <li><span>C language</span><br>Basic C</li>
+                        <li><span>PYTHON</span><br>most popular programming language can be used by developers and non-developers</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-2027</span><br>B.Tech ECE in SRM Institute of Science and Technology<br> 
+                                                      SEM - 1 CGPA 8.22 </li>
+                        <li><span>2021-2023</span><br>Intermediate in Narayana Junior College <br> 
+                                                      class 11,12:CGPA 93.2</li>
+                        <li><span>2019-2020</span><br>10th in Sri Chaithanya EM High School <br> 
+                                                       CGPA 10</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------certifications-------------------- -->
+<div id="certifications">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="certifications-list">
+            <div>
+                <i class="fa-solid fa-certificate"></i>
+                <h2>Simplilearn</h2>
+                <p>Python Certificate</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-certificate"></i>
+                <h2>YSES Computer Institute</h2>
+                <p>Got Certifications in MS Excel,MS Powerpoint,Photoshop,MS word </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-certificate"></i>
+                <h2>YSES Computer Institute</h2>
+                <p>C-Language Certificate</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------- Achievements--------------------- -->
+<div id="Achievements">
+    <div class="container">
+        <h1 class="sub-title">Achievements</h1>
+        <div class="Achievements-list">
+            <div>
+                <h2>Chess</h2>
+                <p>Partcipated and got a medal in chess competition</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------------------portfolio-------------------------------- -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="work-1.jpeg">
+                <div class="layer">
+                    <h3>SNAKE-GAME</h3>
+                    <p>Built Snake-game using python language</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------------------------contact---------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>kuberavishnu2005@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9032079156</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kubera-vishnu"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/tskuberavishnu"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.hackerrank.com/kuberavishnu2005"><i class="fa-brands fa-hackerrank"></i></a>
+                </div>
+                <a href="vishnu_resume.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzG7qYcr6QqX9IDoqdhdEQiFMExvAfgtjGtqLkoxITtdzAJfx5pwNKzS3UDCtxFBECX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
